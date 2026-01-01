@@ -1,0 +1,434 @@
+/*
+#4A7FA7
+#1A3D63
+#F6FAFD
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color: #F6FAFD;
+}
+
+/* ------------ HEADER ------------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: #1A3D63;
+    color: #F6FAFD;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #F6FAFD;
+    margin-left: 0; /* gap handles spacing */
+}
+
+header nav a:hover {
+    color: #6da6d1;
+}
+
+/* ------------ SECTIONS ------------- */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ------------ HERO ------------- */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.intro {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 0;
+    max-width: 500px;
+}
+
+.hi {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #1A3D63;
+}
+
+.intro-content {
+    margin-left: 0;
+    font-size: 18px;
+}
+
+.skills-btn,
+.contact-btn {
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 16px;
+    background-color: #1A3D63;
+    color: #F6FAFD;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-btn {
+    margin-left: 0;
+}
+
+.img {
+    height: 300px;
+    max-width: 100%;
+    width: auto;
+    margin-right: 0;
+    display: block;
+}
+.img1 {
+    height: 300px;
+    max-width: 100%;
+    width: auto;
+    margin-right: 100px;
+    display: block;
+}
+
+/* ----------- MY JOURNEY ------------*/
+.my-journey-text {
+    text-align: center;
+    color: #F6FAFD;
+    padding-top: 25px;
+}
+
+.my-journey {
+    background-color: #1A3D63;
+    padding-bottom: 40px;
+}
+
+#my-journey {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px 20px 20px;
+    gap: 20px;
+}
+
+.box {
+    height: auto;
+    width: 25%;
+    min-width: 260px;
+    max-width: 320px;
+    background-color: #F6FAFD;
+    color: #1A3D63;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 0;
+    border-color: #F6FAFD;
+    border-width: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+}
+
+.skill-list,
+ul {
+    font-size: 15px;
+    margin: 15px;
+    color: black;
+}
+
+/*----------- PROJECT ------------*/
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: transparent;
+}
+
+.project-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1A3D63;
+    font-family: "Playfair Display", serif;
+    margin: 0 0 30px 0;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.project-box {
+    height: 400px;
+    width: 300px;
+    background-color: #F6FAFD;
+    border: 2px solid #1A3D63;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    color: #1A3D63;
+}
+
+.project-box img {
+    height: 200px;
+    width: auto;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-box .text1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.project-box .text2 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 12px 5px;
+}
+
+/*----------- CONTACT ME (DESKTOP) ------------*/
+#contact-me {
+    background-color:#1A3D63;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 130px 20px;
+    gap: 40px;
+}
+
+/* make left text and right form two columns */
+.left,
+.right {
+    width: 50%;
+    max-width: 500px;
+    color: #F6FAFD;
+    height: auto;
+}
+
+/* left content */
+.content-1 {
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 32px;
+
+}
+
+.content-2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.content-3 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.email-logo {
+    height: 25px;
+    margin-left: 0;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.email-email {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.git{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.github{
+    height: 25px;
+    margin-left: 0;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/* right form */
+.right {
+    margin-top: 0;
+}
+
+form {
+    width: 100%;
+}
+
+.first-name,
+.last-name {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.last-name {
+    margin-left: 30px;
+}
+
+.first-name-box,
+.last-name-box {
+    margin-left: 0;
+    width: 48%;
+    height: 32px;
+    margin-top: 8px;
+    background-color:#F6FAFD;
+    padding: 4px 8px;
+}
+
+.last-name-box {
+    margin-left: 4%;
+}
+
+.email {
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 15px;
+    display: block;
+}
+
+.email-box {
+    margin-left: 0;
+    width: 100%;
+    height:32px;
+    background-color:#F6FAFD;
+    padding: 4px 8px;
+}
+
+.message-box {
+    margin-left: 0;
+    width: 100%;
+    height:100px;
+    background-color:#F6FAFD;
+    margin-top: 8px;
+    padding: 6px 8px;
+}
+
+.send {
+    margin-left: 0;
+    margin-top: 16px;
+    border-color: #F6FAFD;
+    border-style: solid;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color:#F6FAFD;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.email-logo {
+    height: 25px;
+    border-radius: 10px;
+}
+
+/* ---------- RESPONSIVE (TABLET & MOBILE) ---------- */
+@media (max-width: 900px) {
+    /* header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* hero */
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+    .skills-btn,
+    .contact-btn {
+        margin-right: 0;
+    }
+
+    /* my journey */
+    .box {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* contact stack on smaller screens */
+@media (max-width: 768px) {
+    #contact-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hi {
+        font-size: 28px;
+    }
+
+    .intro-content {
+        font-size: 16px;
+    }
+
+    .project-box {
+        width: 100%;
+        max-width: 340px;
+    }
+}

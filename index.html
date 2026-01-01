@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--Nav Bar-->
+    <header>
+        <p class="my-portfolio">Portfolio</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#my-journey">  Services</a>
+            <a href="Resume.pdf">Resume</a>
+            <a href="#contact-me">Contact me</a>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section id="home">
+        <div class="intro">
+            <h1 class="hi">Hi, I'm Shafaana!</h1>
+            <p class="intro-content">
+                A Front-End Web Developer passionate about building clean, responsive, and user-friendly web experiences.  
+                I love turning ideas into interactive, modern websites using HTML, CSS, and JavaScript.   
+            </p>
+            <button class="skills-btn">View Skills</button>
+            <button class="contact-btn">Contact Me</button>
+        </div>
+        <div>
+            <img src="image.jpg" class="img1">
+        </div>
+    </section>
+
+    <!--My Journey-->
+    <div class="my-journey">
+        
+        <section id="my-journey">
+            <div class="box">Projects<hr>
+                <ul>Interactive Portfolio Website</ul>
+                <ul>Smart To-Do App</ul>
+                <ul>Advanced Calculator</ul>
+                <ul>Micro Habit Tracker</ul>
+                <ul> Quiz Challenge Game</ul>
+                <ul> Student record dashboard</ul>
+                <ul>Dynamic Image Galler</ul>
+                <ul> Personal Health Tracker</ul>
+            </div>
+            <div class="box">Services <hr>
+                <ul>Front-End Web Development</ul>
+                <ul>UI / UX Design</ul>
+                <ul>Responsive Web Design</ul>
+                <ul>Website Optimization</ul>
+                <ul>JavaScript Interactivity</ul>
+                <ul>Website Maintenance</ul>
+                <ul>Contact Form Setup</ul>
+                <ul>Website Simple Fixes</ul>
+            </div>
+            <div class="box">Skills <hr>
+                <p class="skill-list">Html</p>
+                <p class="skill-list">Css</p>
+                <p class="skill-list">JavaScript</p>
+                <p class="skill-list">Python</p>
+                <p class="skill-list">SQL</p>
+                <p class="skill-list">Microsoft Excel</p>
+                <p class="skill-list">UI/UX</p>
+                <p class="skill-list">Digital Marketing</p>
+            </div>
+        </section>
+    </div>
+    
+    <!--Projects-->
+    <section id="project">
+        <h1 class="project-heading">Certifications</h1>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img class="img" src="images/fe.png">
+                <p class="text1">Front End Development</p>
+                <p class="text2">
+                    I create clean and responsive websites using HTML and CSS.
+                    I focus on simple layouts, neat design, and mobile-friendly pages.
+                    My goal is to build user-friendly and well-structured frontends.
+                </p>
+            </div>
+             <div class="project-box">
+                <img class="img" src="images/block.png">
+                <p class="text1">Full Stack Web Development</p>
+                <p class="text2">I design and develop full-stack web applications with a focus on clean interfaces, 
+                    efficient backend logic, and seamless user interaction.
+                     I aim to build scalable, maintainable, and mobile-friendly web solutions.</p>
+            </div>
+            <div class="project-box">
+                <img class="img" src="images/py.png">
+                <p class="text1">Programming with Python 3.X</p>
+                <p class="text2">
+                    I write clean and readable Python code for basic programs and problem-solving.
+                    I understand core concepts like variables, loops, functions, and conditions.
+                    I focus on logical thinking and writing efficiently.
+                </p>
+            </div>
+           
+            
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact-me">
+        <div class="left">
+            <p class="content-1">Get In Touch</p>
+            <p class="content-2">I'd like to hear from you!</p>
+            <p class="content-3">
+                If you have an inquiries or just want to say hi, please use the contact form!
+            </p>
+
+            <img src="logo/email.png" class="email-logo">
+            <p class="email-email">khaalidashafaana@gmail.com</p><br>
+            <a href="https://github.com/shafaana6" target="_blank">
+            <img src="logo/github.png" class="github">
+            </a>
+            <p class="git">Click the image to go to my GitHub</p>
+
+        </div>
+
+        <div class="right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="72348af6-6aed-43d9-9f3a-2f7fb6ccb45a">
+
+                <p class="first-name">First Name:</p><br>
+                <input type="text" class="first-name-box" name="first_name" required>
+
+                <p class="email">Email:</p><br>
+                <input type="email" class="email-box" name="email" required>
+
+                <p class="email">Message:</p><br>
+                <textarea class="message-box" rows="10" cols="33" name="message" required></textarea><br>
+
+                <button class="send" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript to make buttons scroll -->
+    <script>
+        document.querySelector('.skills-btn').addEventListener('click', () => {
+            document.querySelector('#my-journey').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.querySelector('.contact-btn').addEventListener('click', () => {
+            document.querySelector('#contact-me').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
